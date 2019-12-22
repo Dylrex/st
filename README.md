@@ -68,3 +68,6 @@ To be clear about the color settings:
 
 Note that when you run `wal`, it will negate the transparency of existing windows, but new windows will continue with the previously defined transparency.
 
+### Hangul (한글)
+
+To use Hangul (한글) characters, install ttf-nanum fonts - the specific font used is [Nanum Gothic](https://fonts.google.com/specimen/Nanum+Gothic).
