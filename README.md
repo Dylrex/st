@@ -1,4 +1,4 @@
-# Dylrex's fork of Luke Smith's st build - the simple (suckless) terminal
+# Dylrex's st build - the simple (suckless) terminal
 
 The [suckless terminal (st)](https://st.suckless.org/) with some additional features that make it literally the best terminal emulator ever:
 
@@ -24,6 +24,7 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 
 ## Other st patches
 
++ Boxdraw
 + Vertcenter
 + Scrollback
 + font2
