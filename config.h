@@ -102,7 +102,7 @@ unsigned int tabspaces = 8;
 float alpha = 0.90;
 
 /* Terminal colors (16 first used in escape sequence) */
-/*static const char *colorname[] = {
+static const char *colorname[] = {
 	"#282828",
 	"#cc241d",
 	"#98971a",
@@ -121,38 +121,11 @@ float alpha = 0.90;
 	"#ebdbb2",
 	[255] = 0,
 
-	"#282828",*/   /* 256 -> bg */
-	/* "#ebdbb2", */  /* 257 -> fg */
-	/*"#add8e6",*/ /* 258 -> cursor
-};*/
-
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-
-  /* 8 normal colors */
-  [0] = "#191919", /* black   */
-  [1] = "#ff355b", /* red     */
-  [2] = "#b6e875", /* green   */
-  [3] = "#ffc150", /* yellow  */
-  [4] = "#75d3ff", /* blue    */
-  [5] = "#b975e6", /* magenta */
-  [6] = "#6cbeb5", /* cyan    */
-  [7] = "#c1c8d6", /* white   */
-
-  /* 8 bright colors */
-  [8]  = "#191919", /* black   */
-  [9]  = "#ff355b", /* red     */
-  [10] = "#b6e875", /* green   */
-  [11] = "#ffc150", /* yellow  */
-  [12] = "#75d4ff", /* blue    */
-  [13] = "#b975e6", /* magenta */
-  [14] = "#6cbeb5", /* cyan    */
-  [15] = "#c1c8d6", /* white   */
-
-  /* special colors */
-  [256] = "#191919", /* background */
-  [257] = "#b2c8d6", /* foreground */
+	"#282828",   /* 256 -> bg */
+	"#ebdbb2",   /* 257 -> fg */
+	"#add8e6", /* 258 -> cursor */
 };
+
 
 
 /*
@@ -202,7 +175,7 @@ static unsigned int defaultattr = 11;
 ResourcePref resources[] = {
 		{ "font",         STRING,  &font },
 		{ "fontalt0",     STRING,  &font2[0] },
-	/*	{ "color0",       STRING,  &colorname[0] },
+		{ "color0",       STRING,  &colorname[0] },
 		{ "color1",       STRING,  &colorname[1] },
 		{ "color2",       STRING,  &colorname[2] },
 		{ "color3",       STRING,  &colorname[3] },
@@ -220,7 +193,7 @@ ResourcePref resources[] = {
 		{ "color15",      STRING,  &colorname[15] },
 		{ "background",   STRING,  &colorname[256] },
 		{ "foreground",   STRING,  &colorname[257] },
-		{ "cursorColor",  STRING,  &colorname[258] }, */
+		{ "cursorColor",  STRING,  &colorname[258] },
 		{ "termname",     STRING,  &termname },
 		{ "shell",        STRING,  &shell },
 		{ "xfps",         INTEGER, &xfps },
